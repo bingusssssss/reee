@@ -4,11 +4,11 @@ body{
   font-family: "Dancing Script", system-ui;
   background-color: #e3e3e3;
   position: absolute;
-  width: 3450x;
+  width: 3700x;
   height: 200px;
   z-index: 15;
-  top: 25%;
-  left: 50%;
+  top: 20%;
+  left: 49%;
   margin: -100px 0 0 -150px;
 }
 *{
