@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
     <script>
       function checkSecretWord() {
-        // Get the input value
-        var inputWord = document.getElementById("secretWord").value;
+        var inputWord = document.getElementById("secretWord").value.toLowerCase();
         
-        // Define the special word (you can change this)
-        var specialWord = "boba";
+        var specialWord = "boba".toLowerCase();
         
-        // Check if the entered word matches the special word
         if (inputWord === specialWord) {
-          // Redirect to the new page
-          window.location.href = "p.html"; // Change this to the URL you want
+          window.location.href = "p.html";
         } else {
-          // Show an error message
-          alert("Incorrect word! Try again.");
+          alert("Nuh-uh! Try again bingus.");
         }
       }
     </script>
     <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <div>
-    <h2>Please enter the password</h2>
-    <p>Hint: you are my ...</p>
-    <!-- Input field to enter the secret word -->
-    <input type="text" id="secretWord" placeholder="Password">
-    
-    <!-- Button to submit and check the word -->
-    <br>
-    <button onclick="checkSecretWord()">Submit</button>
-  </div>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <h2>Please enter the password</h2>
+      <p>Hint: you are my ...</p>
+      <input type="text" id="secretWord" placeholder="Password">
+      <br>
+      <button onclick="checkSecretWord()">Submit</button>
+    </div>
+  </body>
 </html>

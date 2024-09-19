@@ -1,6 +1,9 @@
 body {
-  background-color: bisque;
+  background-color: #f7e9b3;
   text-align: center;
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 div {
@@ -8,7 +11,35 @@ div {
   width: 300px;
   height: 200px;
   z-index: 15;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin: -100px 0 0 -150px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c16b45;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ae533f;
 }
