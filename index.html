@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <script>
+      function checkSecretWord() {
+        // Get the input value
+        var inputWord = document.getElementById("secretWord").value;
+        
+        // Define the special word (you can change this)
+        var specialWord = "boba";
+        
+        // Check if the entered word matches the special word
+        if (inputWord === specialWord) {
+          // Redirect to the new page
+          window.location.href = "p.html"; // Change this to the URL you want
+        } else {
+          // Show an error message
+          alert("Incorrect word! Try again.");
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    <h2>Please enter the password</h2>
+    <p>Hint: you are my ...</p>
+    <!-- Input field to enter the secret word -->
+    <input type="text" id="secretWord" placeholder="Password">
+    
+    <!-- Button to submit and check the word -->
+    <br>
+    <button onclick="checkSecretWord()">Submit</button>
+  </div>
+</body>
+</html>
